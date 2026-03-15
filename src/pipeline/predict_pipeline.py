@@ -9,7 +9,7 @@ class PredictPipeline:
 
     def predict(self, data):
 
-        df = pd.DataFrame([data])
+        df = data
 
         prediction = self.model.predict(df)
 

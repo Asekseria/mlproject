@@ -7,6 +7,7 @@ from src.components.data_transformation import get_preprocessor
 def train_model():
 
     X_train, X_test, y_train, y_test = load_data()
+    print(X_train)
 
     preprocessor = get_preprocessor()
 

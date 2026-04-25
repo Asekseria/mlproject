@@ -1,0 +1,58 @@
+name: Titanic CI-CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci-cd:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Setup Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      # 4. Run tests (CI)
+      - name: Run tests
+        run: |
+          pytest -v
+
+      # 5. Build Docker image
+      - name: Build Docker image
+        run: |
+          docker build -t titanic-app .
+
+      # 6. Run container test
+      - name: Test container
+        run: |
+          docker run -d -p 8080:8080 titanic-app
+          sleep 5
+          curl http://localhost:8080
+
+      # 7. Login to DockerHub (CD)
+      - name: Login to DockerHub
+        run: |
+          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      # 8. Tag image
+      - name: Tag image
+        run: |
+          docker tag titanic-app ${{ secrets.DOCKER_USERNAME }}/titanic-app:latest
+
+      # 9. Push image
+      - name: Push image
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/titanic-app:latest

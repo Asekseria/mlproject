@@ -40,5 +40,6 @@ scikit-learn
 catboost
 xgboost
 Flask
+pytest
 
 -e .

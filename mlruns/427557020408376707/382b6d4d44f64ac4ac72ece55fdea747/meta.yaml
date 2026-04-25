@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ankitsekseria/Desktop/praxis_class/Model_deployment/ml_projects/mlruns/427557020408376707/382b6d4d44f64ac4ac72ece55fdea747/artifacts
+end_time: 1776411108999
+entry_point_name: ''
+experiment_id: '427557020408376707'
+lifecycle_stage: active
+run_id: 382b6d4d44f64ac4ac72ece55fdea747
+run_name: model_training
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776411104271
+status: 3
+tags: []
+user_id: ankitsekseria

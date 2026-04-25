@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ankitsekseria/Desktop/praxis_class/Model_deployment/ml_projects/mlruns/427557020408376707/0e9b42182c7d4d1db8d7bf417c0947b3/artifacts
+end_time: 1776411109061
+entry_point_name: ''
+experiment_id: '427557020408376707'
+lifecycle_stage: active
+run_id: 0e9b42182c7d4d1db8d7bf417c0947b3
+run_name: drift_detection
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776411109008
+status: 3
+tags: []
+user_id: ankitsekseria

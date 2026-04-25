@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/ankitsekseria/Desktop/praxis_class/Model_deployment/ml_projects/mlruns/427557020408376707/6e251482e86d463e84175a4d1eb32b76/artifacts
+end_time: 1776411110522
+entry_point_name: ''
+experiment_id: '427557020408376707'
+lifecycle_stage: active
+run_id: 6e251482e86d463e84175a4d1eb32b76
+run_name: artifact_logging
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776411110514
+status: 3
+tags: []
+user_id: ankitsekseria

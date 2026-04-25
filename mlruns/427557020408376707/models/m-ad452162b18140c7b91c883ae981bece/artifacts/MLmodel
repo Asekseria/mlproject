@@ -1,0 +1,22 @@
+artifact_path: file:///Users/ankitsekseria/Desktop/praxis_class/Model_deployment/ml_projects/mlruns/427557020408376707/models/m-ad452162b18140c7b91c883ae981bece/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.6
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.1.4
+model_id: m-ad452162b18140c7b91c883ae981bece
+model_size_bytes: 795
+model_uuid: m-ad452162b18140c7b91c883ae981bece
+prompts: null
+run_id: 382b6d4d44f64ac4ac72ece55fdea747
+utc_time_created: '2026-04-17 07:31:44.535165'

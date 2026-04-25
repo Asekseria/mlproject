@@ -1,0 +1,10 @@
+artifact_location: file:///Users/ankitsekseria/Desktop/praxis_class/Model_deployment/ml_projects/mlruns/427557020408376707/models/m-ad452162b18140c7b91c883ae981bece/artifacts
+creation_timestamp: 1776411104502
+experiment_id: '427557020408376707'
+last_updated_timestamp: 1776411108995
+model_id: m-ad452162b18140c7b91c883ae981bece
+model_type: null
+name: model
+source_run_id: 382b6d4d44f64ac4ac72ece55fdea747
+status: 2
+status_message: null

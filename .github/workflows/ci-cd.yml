@@ -28,7 +28,8 @@ jobs:
       # 4. Run tests (CI)
       - name: Run tests
         run: |
-            PYTHONPATH=. pytest -v
+            pytest -v
+            # PYTHONPATH=. pytest -v #use this for demo
 
       # 5. Build Docker image
       - name: Build Docker image
